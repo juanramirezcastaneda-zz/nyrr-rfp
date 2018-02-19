@@ -9,6 +9,7 @@ import { InitiativesComponent } from './initiatives/initiatives.component';
 import { FaqComponent } from './faq/faq.component';
 import { PhotosAndStoriesComponent } from './photos-and-stories/photos-and-stories.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MobileMenuBarComponent } from './mobile-menu-bar/mobile-menu-bar.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     ResourcesComponent,
     InitiativesComponent,
     FaqComponent,
-    PhotosAndStoriesComponent
+    PhotosAndStoriesComponent,
+    MobileMenuBarComponent
   ],
   imports: [
     BrowserModule,

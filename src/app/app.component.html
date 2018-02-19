@@ -5,7 +5,7 @@
           width="120" height="50" />
     </div>
     <div class="nyrr-navbar-mobile">
-      <a>Menu</a>
+      <a (click)=toogleMenu()>Menu</a>
     </div>
     <div class="nyrr-navbar-wrapper">
       <div class="nyrr-navbar-login">
@@ -30,4 +30,6 @@
 </header>
 <section>
   <router-outlet></router-outlet>
+</section>
+<section [class.nyrr-mobile-menu]="isMenuActive">
 </section>
