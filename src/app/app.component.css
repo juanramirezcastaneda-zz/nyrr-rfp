@@ -1,5 +1,93 @@
 .nyrr-navbar{
-    background: #00215A;
+    background: #002664;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nyrr-navbar a,
+.nyrr-navbar span{    
+    text-decoration: none;
+    color: white;
+}
+
+.nyrr-logo{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.nyrr-navbar-wrapper{
+    flex-basis: 80%;
+}
+
+.nyrr-navbar-login{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em 2em;
+    border-left: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.nyrr-links a{
+    padding: 0em 0.5em;
+}
+
+.nyrr-navbar-container{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-left: 1px solid #999999;
+    padding: 2em 1em;
+}
+
+.nyrr-navbar-container a{
+    padding: 0 1em;
+}
+
+.nyrr-navbar-mobile{
+    visibility: hidden;
+}
+
+@media all and (max-width: 800px) {
+    .nyrr-navbar-container{
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .nyrr-navbar-wrapper{
+        display: none;
+    }
+
+    .nyrr-navbar-mobile{
+        visibility: visible;
+        flex-basis: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .nyrr-navbar{
+        justify-content: space-between;
+    }
 }

@@ -1,13 +1,33 @@
 <header>
   <nav class="nyrr-navbar">
-    <a routerLink="/races-and-events" routerLinkActive="active">Races & Events</a>
-    <a routerLink="/resources" routerLinkActive="active">Resources</a>
-    <a routerLink="/initiatives" routerLinkActive="active">Initiatives</a>
-    <a routerLink="/faq" routerLinkActive="active">FAQ</a>
-    <a routerLink="/photos-and-stories" routerLinkActive="active">Photos & Stories</a>
+    <div class="nyrr-logo">
+        <img src="http://fpoimg.com/120x50?text=Preview&bg_color=169abb&text_color=ffffff" 
+          width="120" height="50" />
+    </div>
+    <div class="nyrr-navbar-mobile">
+      <a>Menu</a>
+    </div>
+    <div class="nyrr-navbar-wrapper">
+      <div class="nyrr-navbar-login">
+        <div>
+          <span>NYRR</span>
+        </div>
+        <div class="nyrr-links">
+          <a>Donate</a>
+          <a>Help</a>
+          <a>Sign in or Join</a>
+        </div>
+      </div>
+      <div class="nyrr-navbar-container">
+        <a routerLink="/races-and-events" routerLinkActive="active">Races & Events</a>
+        <a routerLink="/resources" routerLinkActive="active">Resources</a>
+        <a routerLink="/initiatives" routerLinkActive="active">Initiatives</a>
+        <a routerLink="/faq" routerLinkActive="active">FAQ</a>
+        <a routerLink="/photos-and-stories" routerLinkActive="active">Photos & Stories</a>
+      </div>
+    </div>
   </nav>
 </header>
 <section>
   <router-outlet></router-outlet>
 </section>
-
