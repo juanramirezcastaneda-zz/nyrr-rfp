@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-menu-bar',
@@ -7,6 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class MobileMenuBarComponent {
 
+  @Input('isMenuActive') isMenuActive: boolean;
+  @Output() isMenuActiveChange = new EventEmitter<boolean>();
   constructor() { }
 
+  setMenuActive() {
+    this.isMenuActiveChange.emit(false);
+  }
 }

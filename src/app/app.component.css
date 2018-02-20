@@ -1,5 +1,5 @@
 .nyrr-navbar{
-    background: #002664;
+    background: #00215A;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -12,7 +12,7 @@
 .nyrr-navbar a,
 .nyrr-navbar span{    
     text-decoration: none;
-    color: white;
+    color: #e5e5e5;
 }
 
 .nyrr-logo{
@@ -66,16 +66,6 @@
 
 .nyrr-navbar-mobile{
     visibility: hidden;
-}
-.nyrr-mobile-menu{
-    opacity:0.8;
-    background-color:#cc1;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    z-index:1000;
 }
 
 @media all and (max-width: 800px) {

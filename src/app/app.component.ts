@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   isMenuActive = false;
-  toogleMenu() {
-    this.isMenuActive = !this.isMenuActive;
+  openMenu() {
+    this.isMenuActive = true;
   }
 }

@@ -1,0 +1,44 @@
+.nyrr-mobile-menu{
+    width: 0;
+    height: 0;
+}
+
+.inactive{
+    display: none;
+}
+
+@media all and (max-width: 600px) {
+    .nyrr-mobile-menu{
+        display: block;
+        background-color:#00A2DD;
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+        z-index:1000;
+    }
+
+    .nyrr-container{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em 1em;
+    }
+
+    .nyrr-header-bar{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #e5e5e5;
+    }
+   
+}
