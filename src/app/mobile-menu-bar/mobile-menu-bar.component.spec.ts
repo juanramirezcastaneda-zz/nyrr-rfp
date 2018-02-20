@@ -22,4 +22,12 @@ describe('MobileMenuBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('setMenuActive should call the event emitter', () => {
+    spyOn(component.isMenuActiveChange, 'emit');
+
+    component.setMenuActive();
+
+    expect(component.isMenuActiveChange.emit).toHaveBeenCalled();
+  });
 });
