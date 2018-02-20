@@ -7,8 +7,12 @@ describe('nyrr-rfp App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should have a header', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getMenu()).toBeTruthy();
+  });
+  it('Should have a logo', ()=> {
+    page.navigateTo();
+    expect(page.getLogo()).toBeTruthy();
   });
 });
