@@ -26,7 +26,9 @@
         display: -webkit-flex;
         display: flex;
         flex-direction: column;
-        padding: 0.5em 1em;
+    }
+    .nyrr-container > div{
+        padding: 1em;
     }
 
     .nyrr-header-bar{
@@ -39,6 +41,7 @@
         flex-direction: row;
         justify-content: space-between;
         color: #e5e5e5;
+        border-bottom: 1px solid #999999;
     }
    
 }
