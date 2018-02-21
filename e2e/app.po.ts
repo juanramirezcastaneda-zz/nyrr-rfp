@@ -6,9 +6,9 @@ export class AppPage {
   }
 
   getMenu() {
-    return element(by.tagName('Header')).getText();
+    return element(by.tagName('Header'));
   }
-  getLogo(){
+  getLogo() {
     return element(by.className('nyrr-logo'));
   }
 }
