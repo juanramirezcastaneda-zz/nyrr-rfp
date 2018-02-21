@@ -9,10 +9,10 @@ describe('nyrr-rfp App', () => {
 
   it('should have a header', () => {
     page.navigateTo();
-    expect(page.getMenu()).toBeTruthy();
+    expect(page.getMenu().isDisplayed()).toBe(true);
   });
   it('Should have a logo', ()=> {
     page.navigateTo();
-    expect(page.getLogo()).toBeTruthy();
+    expect(page.getLogo().isDisplayed()).toBe(true);
   });
 });
