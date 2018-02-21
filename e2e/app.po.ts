@@ -5,7 +5,10 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getMenu() {
+    return element(by.tagName('Header'));
+  }
+  getLogo() {
+    return element(by.className('nyrr-logo'));
   }
 }
