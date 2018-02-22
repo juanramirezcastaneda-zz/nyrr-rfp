@@ -10,6 +10,7 @@ import { FaqComponent } from './faq/faq.component';
 import { PhotosAndStoriesComponent } from './photos-and-stories/photos-and-stories.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MobileMenuBarComponent } from './mobile-menu-bar/mobile-menu-bar.component';
+import { YouthComponent } from './youth/youth.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MobileMenuBarComponent } from './mobile-menu-bar/mobile-menu-bar.compon
     InitiativesComponent,
     FaqComponent,
     PhotosAndStoriesComponent,
-    MobileMenuBarComponent
+    MobileMenuBarComponent,
+    YouthComponent
   ],
   imports: [
     BrowserModule,
