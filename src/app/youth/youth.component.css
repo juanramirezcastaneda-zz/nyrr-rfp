@@ -32,11 +32,53 @@
     margin-left: 2em;
 }
 
-@media all and (max-width: 600px) {
+.nyrr-video{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nyrr-video > div{
+    flex-basis: 50%;
+}
+
+.nyrr-video > div > p{
+    margin: 0;
+    padding: 1.5em;
+}
+
+.nyrr-video-wrapper{
+    padding: 1.5em;
+}
+
+.nyrr-video-wrapper > iframe{
+    min-height: 300px;
+    width: 100%;
+}
+
+.nyrr-content-row{
+    display: block;
+    padding: 1.5em;
+}
+
+@media all and (max-width: 600px) {    
     .nyrr-banner{
         min-height: 75px;
     }
     .nyrr-banner> div:first-of-type{
         border-width: 0px;
+    }
+    .nyrr-video{
+        display: block;
+        justify-content: space-around;
+    }
+    .nyrr-video > div{
+        flex-basis: 50%;
+    }
+    .nyrr-video > div > p{
+        margin: 0;
+    }
+    .nyrr-video-wrapper > iframe{
+        min-height: 250px;
+        width: 100%;
     }
 }
