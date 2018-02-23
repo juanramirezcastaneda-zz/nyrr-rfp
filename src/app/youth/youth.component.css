@@ -1,0 +1,84 @@
+.nyrr-youth-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.nyrr-banner{
+    background-color: #999999;
+    display: flex;
+    min-height: 150px;
+    width: 100%;
+}
+
+.nyrr-banner> div:first-of-type{
+    background-color: #999999;
+    border-color: #3480DE transparent transparent transparent;
+    border-width: 150px 100px 0 0;
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 30%;
+    border-style: solid;
+}
+
+.nyrr-banner > div:last-of-type{
+    position: relative;
+    flex-basis: 30%;
+    align-self: center;
+}
+
+.nyrr-banner > div:last-of-type > h1{
+    color: #e5e5e5;
+    margin-left: 2em;
+}
+
+.nyrr-video{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nyrr-video > div{
+    flex-basis: 50%;
+}
+
+.nyrr-video > div > p{
+    margin: 0;
+    padding: 1.5em;
+}
+
+.nyrr-video-wrapper{
+    padding: 1.5em;
+}
+
+.nyrr-video-wrapper > iframe{
+    min-height: 300px;
+    width: 100%;
+}
+
+.nyrr-content-row{
+    display: block;
+    padding: 1.5em;
+}
+
+@media all and (max-width: 600px) {    
+    .nyrr-banner{
+        min-height: 75px;
+    }
+    .nyrr-banner> div:first-of-type{
+        border-width: 0px;
+    }
+    .nyrr-video{
+        display: block;
+        justify-content: space-around;
+    }
+    .nyrr-video > div{
+        flex-basis: 50%;
+    }
+    .nyrr-video > div > p{
+        margin: 0;
+    }
+    .nyrr-video-wrapper > iframe{
+        min-height: 250px;
+        width: 100%;
+    }
+}
