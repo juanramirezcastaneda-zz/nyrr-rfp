@@ -62,13 +62,29 @@
     border-bottom: 1px solid #e5e5e5;
 }
 
-.nyrr-youth-table td {
-    padding-right: 3.5em;
+.nyrr-content-row > div{
+    display: flex;
+    justify-content: space-between;
 }
 
-.nyrr-youth-table td > div{
-    max-width: 280px;
+.nyrr-content-row > div > div{
+    margin-top: 1.5em;
+    color: #00A2DD;
 }
+
+.nyrr-youth-table{
+    width: 100%;
+}
+
+.nyrr-youth-table td {
+    text-align: center;
+    padding-right: 3.5em;
+    padding-bottom: 2em;
+}
+
+/* .nyrr-youth-table td > div{
+    max-width: 280px;
+} */
 
 @media all and (max-width: 600px) {    
     .nyrr-banner{
