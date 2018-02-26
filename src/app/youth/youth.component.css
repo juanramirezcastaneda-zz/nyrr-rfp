@@ -57,7 +57,17 @@
 
 .nyrr-content-row{
     display: block;
-    padding: 1.5em;
+    padding-bottom: 1.5em;
+    margin: 1.5em;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nyrr-youth-table td {
+    padding-right: 3.5em;
+}
+
+.nyrr-youth-table td > div{
+    max-width: 280px;
 }
 
 @media all and (max-width: 600px) {    
